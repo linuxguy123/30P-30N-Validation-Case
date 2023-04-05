@@ -25,13 +25,13 @@ I am starting the repository out with the following files so that others may use
 
 The first file is a FreeCAD model of a 1m(nominal) 30P-30N wing and windtunnel along with a 2D CfdOF analysis object.  The other files are stl, iges and brep representations of the wind tunnel solid and the wing solid and wing profile files to recreate a 30P-30N airfoil.   
 
-The normalized dat files have an overall chord of 1.0.  The non normalized dat files have a chord of ~1.2 with the slat starting prior to x=0 and the flap going beyond x=1.  The wing and wind tunnel models are not normalized.  I included normalized dat files because some airfoil tools expect airfoils to have a chord less than 1.0.
+The normalized dat files have an overall chord of 1.0.  The non normalized dat files have a chord of ~1.2 with the slat starting prior to x=0 and the flap going beyond x=1.  The wing and wind tunnel models are not normalized.  I included normalized dat files because some airfoil tools expect airfoils to have a chord greater than 0 and less than 1.0.
 
 Note: The 30P-30N wing has a nominal chord of 1.0 when the slat and flap are retracted but an actual chord of ~1.2 when extended. All 30P-30N lift and drag figures are with respect to the nominal chord, not the actual chord.  If one simulates a normalized 30P-30N airfoil, one will need to multiply the forces and coefficients by ~1.2 to get the values used in industry. 
 
 Helpful Information
 
-The air velocity for Re of 5,000,000 flowing past a 1m airfoil is 90m/sec.  The reference pressure (rho/2*V^2) of std air at 90m/s is 4961 pa.
+The air velocity for Re = 5,000,000 flowing past a 1m airfoil is 90m/sec.  The reference pressure (rho/2*V^2) of std air at 90m/s is 4961 pa.
 
 The 30P-30N airfoil is challenging to mesh and simulate because of its unique geometry and the airflows around those geometries.
 
