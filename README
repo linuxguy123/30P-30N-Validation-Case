@@ -1,0 +1,40 @@
+
+This repository contains various resources necessary/helpful to validate the meshing and CFD simulation of a 30P-30N airfoil.
+
+The impetus for this activity came from Wolf Dynamics 30P-30N validation case available here: http://www.wolfdynamics.com/tutorials.html?id=119
+
+In their validation case WD meshed and simulated a 30P-30N airfoil at a 0 degree AoA at a Reynolds number of 5,000,000 using the Spalart-Allmaras turbulence model.  They obtained a Cd of 2.237588 and a CL of 0.034598 versus the experimental values of 2.167089 and 0.033243 respectively. 
+
+References:
+
+Prediction of high lift: review of present CFD capability. Progress in Aerospace Sciences, 38:145-180. 2002.
+
+Comparative results from a CFD challenge over a 2D three-element high-lift airfoil. NASA Technical Memorandum 112858.
+
+Numerical study to assess sulfur hexafluoride as a medium for testing multi-element airfoils. NASA Technical Paper 3496.
+
+Wolf Dynamics graciously provides a link to download the case file on their web page.  
+
+I am starting the repository out with the following files so that others may use them to validate various meshing and simulation tools they may be using. 
+
+- 30P-30N-Validation.FCStd   
+- 30P-30N-Validation-Windtunnel-Solid.stl
+- 30P-30N-Validation-Wing-Solid.stl
+- 30P-30N-{whole|Slat|Flap|Main}-raw.dat
+- 30P-30N-{whole|Slat|Flap|Main}-Normalized.dat
+
+The first file is a FreeCAD model of a 1m(nomidal) 30P-30N wing and windtunnel along with a 2D CfdOF analysis object.  The other files are stl representations of the wind tunnel solid and the wing solid and wing profile files to recreate a 30P-30N airfoil.   The normalized dat files have an overall chord of 1.0.  The non normalized dat files have a chord of ~1.2 with the slat starting prior to x=0 and the flap going beyond x=1.
+
+Note: The 30P-30N wing has a nominal chord of 1.0 when the slat and flap are retracted but an actual chord of ~1.2 when extended. All 30P-30N lift and drag figures are with respect to the nominal chord, not the actual chord.  If one simulates a normalized 30P-30N airfoil, one will need to multiply the forces and coefficients by ~1.2 to get the values used in industry. 
+
+The 30P-30N airfoil is challenging to mesh and simulate because of its unique geometry.
+
+I encourage people to contribute their validation solutions to this repository by creating new folders and including their own READMEs and solution files. 
+
+
+
+
+
+
+
+
