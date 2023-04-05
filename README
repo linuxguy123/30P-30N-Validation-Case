@@ -29,6 +29,10 @@ The normalized dat files have an overall chord of 1.0.  The non normalized dat f
 
 Note: The 30P-30N wing has a nominal chord of 1.0 when the slat and flap are retracted but an actual chord of ~1.2 when extended. All 30P-30N lift and drag figures are with respect to the nominal chord, not the actual chord.  If one simulates a normalized 30P-30N airfoil, one will need to multiply the forces and coefficients by ~1.2 to get the values used in industry. 
 
+Helpful Information
+
+The air velocity for Re of 5,000,000 flowing past a 1m airfoil is 90m/sec.  The reference pressure (rho/2*V^2) of std air at 90m/s is 4961 pa.
+
 The 30P-30N airfoil is challenging to mesh and simulate because of its unique geometry and the airflows around those geometries.
 
 I encourage people to contribute their validation solutions to this repository by creating new folders and including their own READMEs and solution files. 
